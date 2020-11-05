@@ -1,0 +1,14 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="center" fx:controller="Lesson_4.sample.Controller"
+      xmlns:fx="http://javafx.com/fxml" >
+    <MenuBar>
+        <Menu text="File">
+            <MenuItem text="Exit" fx:id="exit" onAction="#closeProg"/>
+        </Menu>
+    </MenuBar>
+    <TextArea fx:id="textArea" editable="false" VBox.vgrow="ALWAYS"/>
+    <TextField fx:id="textField" promptText="Введите текст" VBox.vgrow="ALWAYS" onAction="#SendMessage" />
+    <Button text="Отправить" onAction="#SendMessage"/>
+
+</VBox>
